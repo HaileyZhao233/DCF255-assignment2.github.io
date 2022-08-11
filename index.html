@@ -1,0 +1,129 @@
+<!-- Your main page should go here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FTP Research</title>
+    <link rel="stylesheet" href="./mvp.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- header part-->
+    <header>
+      <h1>File Transfer Protocol (FTP) Research</h1>
+    </header>
+      <nav class=" navbar navbar-expand-lg navbar-light bg-success bg-gradient" style="--bs-bg-opacity: .75;">
+        <div class="container">   
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FTP Message
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./M_type.html">Message Type</a></li>
+                  <li><a class="dropdown-item" href="./M_sequence.html">Message Sequence</a></li>
+                  <li><a class="dropdown-item" href="./M_syntax.html">Message Syntax</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./connectionT.html">Type of Connection</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./conclusion.html">Conclusion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reference.html">References</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+
+    <!-- Main-->
+    <main>
+      <!-- Purpose and Introduction -->
+      <h2>Purpose and Introduction</h2>
+      <br />
+      <p id="p1">
+        <strong>The purpose</strong> of this report is to explore the workings of the File Transfer
+        Protocol
+        <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol"
+          ><abbr title="the File Transfer Protocol"> (FTP)</abbr></a
+        >. Various sources will be utilized for research, which will be used to explain multiple
+        facets of the FTP. Aspects of the FTP that will be explored include the message type,
+        message sequence, message syntax and type of connection. Both written and visual
+        representations will be made to assist the reader with understanding the material.
+        <br />
+      </p>
+      <p id="p2">
+        The FTP is a commonly used internet protocol used for the transfer of files between
+        computers using Transmission Control Protocol/Internet Protocol<a
+          href="https://en.wikipedia.org/wiki/Internet_protocol_suite"
+          ><abbr title="Transmission Control Protocol/Internet Protocol"> (TCP/IP)</abbr></a
+        >
+        connections. FTP was first introduced by Abhay Bhushan in RFC 114 published in April 1971
+        (Bhushan, 1971). This original version ran on the network control program ARPA network
+        before the modern internet came into existence (Bhushan, 1971). The FTP went through several
+        additional updates over the decades with the Transmission Control Protocol/Internet Protocol
+        (TCP/IP) version being published in 1980 as RFC 765 (Postel, 1980). The most current
+        iteration was published in October 1985 in RFC 959 (Postel and Reynolds, 1985).
+        <br />
+      </p>
+        
+        <p id="p3">
+        There are several standards which complement the official RFC 959, including RFC 1579,
+        RFC 2228 and RFC 2428 (Bellovin, 1994) (Horowitz, 1997) (Allman, 1998). FTP is bidirectional
+        in that it allows both the uploading and downloading of files (Goerzen, 2004). As J. Goerzen
+        argues in Foundations on Python Network Programming, “FTP is one of the oldest and most
+        widely used protocols on the internet” (2004, p. 275).
+        <br />
+      </p>
+      <p id="p4">
+        There are many applications using the FTP protocol, including FTP web applications for file
+        downloads, FTP clients for storage and file sharing, single file sharing or downloads,
+        sharing non-sensitive information, FTP automation and business to business file transfer
+        (BasuMallick, 2022).
+      </p>
+      <br />
+      <div class="center">
+        <img id="image" src="./images/apps-426559_640.jpg" width="450" alt="pic1" /> 
+      </div>
+      <br />
+
+      <br />
+      <hr />
+      <footer>
+        <div class="center">
+          <em> Thank you for reading!</em>
+        </div>
+      </footer>
+      <!-- click top -->
+      <div style="height: 2000px">
+        <button id="test" style="position: fixed; right: 0; bottom: 0">&lt;BACK TO TOP&gt;</button>
+        <script>
+          test.onclick = function () {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+          };
+        </script>
+      </div>
+    </main>
+  </body>
+</html>

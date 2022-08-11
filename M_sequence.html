@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./mvp.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Message Sequence</title>
+</head>
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-light bg-success bg-gradient" style="--bs-bg-opacity: .75;">
+        <div class="container">   
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FTP Message
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./M_type.html">Message Type</a></li>
+                  <li><a class="dropdown-item" href="#">Message Sequence</a></li>
+                  <li><a class="dropdown-item" href="./M_syntax.html">Message Syntax</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./connectionT.html">Type of Connection</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./conclusion.html">Conclusion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reference.html">References</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+     <!-- FTP Message -->
+     
+    <h3>Message Sequence</h3>
+    <p class="centeralign">
+      FTP operates in two modes: <strong>active</strong> and <strong> passive</strong> (Payne,
+      2020). With active FTP, the user creates the control channel and authenticates via port 21.
+      Once authenticated, a port command is sent to the server telling it to connect back to the
+      client on another port. The server then opens a data port to allow the transfer of files
+      (Payne, 2020). Passive mode was a later addition to FTP, and with this mode the user creates
+      both the control and data channel. <br /><br />
+      The sequence begins the same as with active mode with the user creating the control channel
+      on port 21 for authentication. Next, instead of sending a port command, the user sends a
+      PASV command which tells the server to open a passive session (Payne, 2020). Major
+      advantages of using a passive session are that configuration responsibility is placed on the
+      server and no firewall requirement for the client. On the other hand, an active session may
+      be more secure than a passive session because port 21 only opens on the inbound (Payne,
+      2020).
+    </p>
+    <br />
+    <div class="semiCenter">
+      <img src="./images/pic2.png" width="800" alt="pic3" />
+      <caption>
+        Note. From baeldung
+        <a>https://www.baeldung.com/wp-content/uploads/sites/4/2021/12/f1.svg</a>
+      </caption>
+    </div>
+    <br />
+
+</body>
+</html>
